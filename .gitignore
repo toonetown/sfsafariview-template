@@ -1,0 +1,22 @@
+# OS-related stuff
+*~
+.DS_Store
+.LSOverride
+Iconr
+/Icon*
+
+# IDE generated files
+xcuserdata
+DerivedData
+*.xccheckout
+.vs
+ipch
+*.sdf
+*.suo
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.user
+*.iml
+local.properties
+.idea

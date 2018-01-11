@@ -1,0 +1,6 @@
+// Defines so that the template project will load and run - removed when copied
+__URL__   = http:\/\/www.toonetown.com
+__RED__   = 0
+__GREEN__ = 0
+__BLUE__  = 0
+GCC_PREPROCESSOR_DEFINITIONS = __sfsv_template_url__=\"${__URL__}\" __sfsv_template_red__=${__RED__} __sfsv_template_green__=${__GREEN__} __sfsv_template_blue__=${__BLUE__} $(inherited)
