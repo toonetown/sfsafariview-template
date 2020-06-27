@@ -39,7 +39,8 @@ cp -R "${SOURCE}" "${TARGET}" || exit $?
 
 echo "Cleaning up unneeded files..."
 # git -C "${TARGET}" clean -fxd &>/dev/null
-rm -rf "${TARGET}/"{.git,.gitignore,README.md,configs,defaults.xcconfig} "${TARGET}/$(basename "${0}")" &>/dev/null
+rm -rf "${TARGET}/"{.git,.gitignore,README.md,configs,__sfsv_template__/Bridging-Header.h} \
+       "${TARGET}/$(basename "${0}")" &>/dev/null
 find "${TARGET}" -name ".DS_Store" -exec rm -f {} \; &>/dev/null
 find "${TARGET}" -name "xcuserdata" -type d -exec rm -rf {} \; &>/dev/null
 
@@ -52,7 +53,7 @@ echo "Update project name to ${TGT_NAME}..."
 find "${TARGET}" -type f -print0 | while IFS= read -r -d '' _F; do
     [[ "$(file -b --mime-encoding "${_F}")" = binary ]] && continue
     sed -i '' -e "s/${SRC_NAME}/${TGT_NAME}/g" "${_F}" || exit $?
-    sed -i '' -e "/defaults\.xcconfig/d" "${_F}" || exit $?
+    sed -i '' -e "/Bridging-Header\.h/d" "${_F}" || exit $?
 done
 
 for _T in ${TGT_TAGS}; do
