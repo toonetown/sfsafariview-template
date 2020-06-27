@@ -12,3 +12,6 @@
 #define __sfsv_template_red__   0
 #define __sfsv_template_green__ 0
 #define __sfsv_template_blue__  0
+#define __sfsv_template_btnRed__   255
+#define __sfsv_template_btnGreen__ 255
+#define __sfsv_template_btnBlue__  255

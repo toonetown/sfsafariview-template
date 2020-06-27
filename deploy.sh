@@ -25,7 +25,7 @@ TGT_NAME="$(basename "${TARGET}")"
 : ${SRC_NAME:="__${TAG_NAME}_template__"}
 
 # Tags to replace
-TGT_TAGS="name identifier version url red green blue"
+TGT_TAGS="name identifier version url red green blue btnRed btnGreen btnBlue"
 : ${TGT_name:="${TGT_NAME}"}
 : ${TGT_identifier:="com.toonetown.$(echo "${TGT_name}" | sed -e 's/ /-/g')"}
 : ${TGT_version:="1.0"}
