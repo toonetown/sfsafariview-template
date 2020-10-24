@@ -278,6 +278,7 @@
 				DEVELOPMENT_TEAM = KVCJU99B88;
 				INFOPLIST_FILE = "$(SRCROOT)/__sfsv_template__/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = __sfsv_template_version__;
 				PRODUCT_BUNDLE_IDENTIFIER = "--sfsv-template-identifier--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/__sfsv_template__/Bridging-Header.h";
@@ -294,6 +295,7 @@
 				DEVELOPMENT_TEAM = KVCJU99B88;
 				INFOPLIST_FILE = "$(SRCROOT)/__sfsv_template__/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = __sfsv_template_version__;
 				PRODUCT_BUNDLE_IDENTIFIER = "--sfsv-template-identifier--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/__sfsv_template__/Bridging-Header.h";
